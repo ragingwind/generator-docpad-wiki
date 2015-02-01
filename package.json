@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "dependencies": {
+    "docpad": "~6.69.2",
+    "docpad-plugin-eco": "~2.1.0",
+    "docpad-plugin-ghpages": "~2.4.3",
+    "docpad-plugin-marked": "~2.2.1",
+    "docpad-plugin-paged": "~2.2.5",
+    "docpad-plugin-partials": "~2.9.1",
+    "docpad-plugin-rss": "~2.1.4",
+    "docpad-plugin-tags": "~2.0.7"
+  },
+  "scripts": {
+    "build": "docpad generate --env static",
+    "deploy": "docpad deploy-ghpages --env static",
+    "test": "docpad generate --silent",
+    "watch": "docpad run --silent"
+  }
+}
